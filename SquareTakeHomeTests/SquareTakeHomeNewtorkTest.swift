@@ -17,17 +17,78 @@ class SquareTakeHomeNewtorkTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testMockData() throws {
+    func testMockEmployeeData() throws {
+        let expectation = self.expectation(description: "EmployeEndPoint")
+        
+        var didFail = false
+        var errorDesc: String?
+        
         let mockNewtork = MockNetwork()
         mockNewtork.retrieveEmployees(fromEndpoint: NetworkEndpoints.employees.url) { results in
             switch results{
             case .success(let employeeReturn):
-                XCTAssert(employeeReturn.employees.count == 11, "Number of employees was incorrect")
+                if employeeReturn.employees.count != 11 {
+                    errorDesc = "number of employees returned is incorrect"
+                    didFail = true
+                }
             case .failure(let error):
-                XCTFail("employee return failed with error \(error)")
+                errorDesc = error.errorDescription
+                didFail = true
             }
+            expectation.fulfill()
         }
+        
+        waitForExpectations(timeout: 3, handler: nil)
+        XCTAssertTrue(didFail == false, "employee return failed with error \(errorDesc ?? "")")
     }
+    
+    func testMockEmployeeEmptyData() throws {
+        let expectation = self.expectation(description: "EmployeEmptyEndPoint")
+        
+        var didFail = false
+        var errorDesc: String?
+        
+        let mockNewtork = MockNetwork()
+        mockNewtork.retrieveEmployees(fromEndpoint: NetworkEndpoints.emptyEmployees.url) { results in
+            switch results{
+            case .success(let employeeReturn):
+                if employeeReturn.employees.count != 0 {
+                    errorDesc = "number of employees returned is incorrect"
+                    didFail = true
+                }
+            case .failure(let error):
+                errorDesc = error.errorDescription
+                didFail = true
+            }
+            expectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 3, handler: nil)
+        XCTAssertTrue(didFail == false, "employee return failed with error \(errorDesc ?? "")")
+    }
+    
+    func testMockEmployeeMalformedData() throws {
+        let expectation = self.expectation(description: "EmployeMalformedEndPoint")
+        
+        var didFail = false
+        var errorDesc: String?
+        
+        let mockNewtork = MockNetwork()
+        mockNewtork.retrieveEmployees(fromEndpoint: NetworkEndpoints.malformedEmployees.url) { results in
+            switch results{
+            case .success:
+                errorDesc = "succedded when it should have failed"
+                didFail = true
+            case .failure:
+                break
+            }
+            expectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 3, handler: nil)
+        XCTAssertTrue(didFail == false, "employee return failed with error \(errorDesc ?? "")")
+    }
+    
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
