@@ -9,6 +9,7 @@ import UIKit
 
 class DashboardViewController: UIViewController {
     
+    //TODO: move into error, loading, data view controllers instead of all UI elements in the same VC
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var refreshButton: UIButton!
     @IBOutlet weak var tableView: UITableView!

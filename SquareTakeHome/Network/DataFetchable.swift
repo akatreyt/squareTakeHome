@@ -7,7 +7,16 @@
 
 import Foundation
 
+// Use a protocol so mock object can be made with the same signature for testing
 protocol DataFetchable {
+    /**
+     * Fetch data from a URL, parse, and return using Result<EmployeeReturn, NetworkError>
+     *
+     * - Parameters:
+     *   - fromEndpoint: The URL to fetch the employee data from
+     *   - completion: Closure to return the EmployeeReturn object or NetworkError
+     * - Returns: Void
+     */
     func retrieveEmployees(fromEndpoint endpoint: URL, completion: @escaping (Result<EmployeeReturn, NetworkError>) -> Void)
 }
 

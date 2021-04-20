@@ -8,12 +8,23 @@
 import Foundation
 import UIKit
 
+// ImageCache is used as an in memory store for URL:Data with the URL being the key
 public final class ImageCache{
-    let queue = DispatchQueue.init(label: "ImageCachingQueue",
+    
+    // when we read / write to the internal cache need it to be on a serial queue
+    private let queue = DispatchQueue.init(label: "ImageCachingQueue",
                                    qos: .background)
     
-    var imageCache = [URL: Data]()
+    private var imageCache = [URL: Data]()
     
+    /**
+     * Retrieve an UIImage or NetworkError for a given url from the ImageCache
+     *
+     * - Parameters:
+     *   - forURL: The URL to fetch the image from, also used as the key in the internal cache
+     *   - completion: Closure to return the UIImage object or NetworkError
+     * - Returns: Void
+     */
     public func getImage(forURL url: URL, completion: @escaping (Result<UIImage, NetworkError>) -> Void){
         if imageCache.keys.contains(url){
             queue.sync {
