@@ -17,7 +17,7 @@ public final class MockNetwork: DataFetchable {
                 fileName = "EmployeeData.json"
             case .malformedEmployees:
                 fileName = "EmployeeMalformed.json"
-            case .emptyEmpoyees:
+            case .emptyEmployees:
                 fileName = "EmployeeEmpty.json"
             }
             

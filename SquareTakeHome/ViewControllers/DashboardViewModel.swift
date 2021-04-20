@@ -37,10 +37,10 @@ public final class DashboardViewModel{
         self.currentViewType = .error(DashboardViewConstants.firstLaunch.rawValue)
     }
 
-    public func getData(){
+    public func getData(endpoint: NetworkEndpoints = .employees){
         self.currentViewType = .loading
         self.employeeReturn = nil
-        dataFetcher.retrieveEmployees(fromEndpoint: NetworkEndpoints.employees.url) { [weak self] result in
+        dataFetcher.retrieveEmployees(fromEndpoint: endpoint.url) { [weak self] result in
             guard let self = self else { return }
             switch result{
             case .success(let employeeReturnData):

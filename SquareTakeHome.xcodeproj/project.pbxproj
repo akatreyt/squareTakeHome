@@ -39,6 +39,7 @@
 		1CB34D39262F1EEE0011E4F7 /* DataFetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34CB2262F18780011E4F7 /* DataFetchable.swift */; };
 		1CB34D3E262F29620011E4F7 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34D3D262F29620011E4F7 /* DashboardViewModel.swift */; };
 		1CB34D3F262F29620011E4F7 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34D3D262F29620011E4F7 /* DashboardViewModel.swift */; };
+		1CB34D50262F34690011E4F7 /* SquareTakeHomeDashboardViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34D4F262F34690011E4F7 /* SquareTakeHomeDashboardViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		1CB34D24262F1DB90011E4F7 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		1CB34D2D262F1E920011E4F7 /* SquareTakeHomeNewtorkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareTakeHomeNewtorkTest.swift; sourceTree = "<group>"; };
 		1CB34D3D262F29620011E4F7 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		1CB34D4F262F34690011E4F7 /* SquareTakeHomeDashboardViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareTakeHomeDashboardViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			children = (
 				1CB34C96262F17230011E4F7 /* SquareTakeHomeTests.swift */,
 				1CB34D2D262F1E920011E4F7 /* SquareTakeHomeNewtorkTest.swift */,
+				1CB34D4F262F34690011E4F7 /* SquareTakeHomeDashboardViewModelTest.swift */,
 				1CB34C98262F17230011E4F7 /* Info.plist */,
 			);
 			path = SquareTakeHomeTests;
@@ -378,6 +381,7 @@
 				1CB34C97262F17230011E4F7 /* SquareTakeHomeTests.swift in Sources */,
 				1CB34D2E262F1E920011E4F7 /* SquareTakeHomeNewtorkTest.swift in Sources */,
 				1CB34CF1262F1A140011E4F7 /* ImageCaching.swift in Sources */,
+				1CB34D50262F34690011E4F7 /* SquareTakeHomeDashboardViewModelTest.swift in Sources */,
 				1CB34CFE262F1A450011E4F7 /* NetworkEndpoints.swift in Sources */,
 				1CB34D26262F1DB90011E4F7 /* NetworkError.swift in Sources */,
 				1CB34D39262F1EEE0011E4F7 /* DataFetchable.swift in Sources */,
