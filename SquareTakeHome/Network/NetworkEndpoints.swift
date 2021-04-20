@@ -7,6 +7,12 @@
 
 import Foundation
 
-enum NetworkEndpoints{
+enum NetworkEndpoints: String{
+    case employees = "https://s3.amazonaws.com/sq-mobile-interview/employees.json"
+    case malformedEmployees = "https://s3.amazonaws.com/sq-mobile-interview/employees_malformed.json"
+    case emptyEmpoyees = "https://s3.amazonaws.com/sq-mobile-interview/employees_empty.json"
     
+    var url: URL {
+        return URL(string: self.rawValue)!
+    }
 }

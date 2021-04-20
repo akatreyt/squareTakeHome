@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct Employee: Codable, Identifiable {
-    var id = UUID()
+public struct Employee: Codable, Identifiable {
+    public var id = UUID()
     
-    let uuid, fullName, phoneNumber, emailAddress: String
-    let biography, photoURLSmall, photoURLLarge, team: String
-    let employeeType: String
+    public let uuid, fullName, phoneNumber, emailAddress: String
+    public let biography, photoURLSmall, photoURLLarge, team: String
+    public let employeeType: String
 
     enum CodingKeys: String, CodingKey {
         case uuid

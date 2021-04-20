@@ -7,6 +7,6 @@
 
 import Foundation
 
-class ImageCaching{
+public final class ImageCaching{
     
 }

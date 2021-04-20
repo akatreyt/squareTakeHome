@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct EmployeeReturn: Codable {
-    let employees: [Employee]
+public struct EmployeeReturn: Codable {
+    public let employees: [Employee]
 }

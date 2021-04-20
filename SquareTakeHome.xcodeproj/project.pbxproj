@@ -26,6 +26,19 @@
 		1CB34CF1262F1A140011E4F7 /* ImageCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34CEF262F1A140011E4F7 /* ImageCaching.swift */; };
 		1CB34CFD262F1A450011E4F7 /* NetworkEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34CFC262F1A450011E4F7 /* NetworkEndpoints.swift */; };
 		1CB34CFE262F1A450011E4F7 /* NetworkEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34CFC262F1A450011E4F7 /* NetworkEndpoints.swift */; };
+		1CB34D09262F1BBE0011E4F7 /* EmployeeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CB34D08262F1BBE0011E4F7 /* EmployeeData.json */; };
+		1CB34D0A262F1BBE0011E4F7 /* EmployeeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CB34D08262F1BBE0011E4F7 /* EmployeeData.json */; };
+		1CB34D10262F1C000011E4F7 /* EmployeeMalformed.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CB34D0F262F1C000011E4F7 /* EmployeeMalformed.json */; };
+		1CB34D11262F1C000011E4F7 /* EmployeeMalformed.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CB34D0F262F1C000011E4F7 /* EmployeeMalformed.json */; };
+		1CB34D19262F1C2A0011E4F7 /* EmployeeEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CB34D18262F1C2A0011E4F7 /* EmployeeEmpty.json */; };
+		1CB34D1A262F1C2A0011E4F7 /* EmployeeEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CB34D18262F1C2A0011E4F7 /* EmployeeEmpty.json */; };
+		1CB34D25262F1DB90011E4F7 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34D24262F1DB90011E4F7 /* NetworkError.swift */; };
+		1CB34D26262F1DB90011E4F7 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34D24262F1DB90011E4F7 /* NetworkError.swift */; };
+		1CB34D2E262F1E920011E4F7 /* SquareTakeHomeNewtorkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34D2D262F1E920011E4F7 /* SquareTakeHomeNewtorkTest.swift */; };
+		1CB34D35262F1EB60011E4F7 /* MockNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34CC0262F18B80011E4F7 /* MockNetwork.swift */; };
+		1CB34D39262F1EEE0011E4F7 /* DataFetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34CB2262F18780011E4F7 /* DataFetchable.swift */; };
+		1CB34D3E262F29620011E4F7 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34D3D262F29620011E4F7 /* DashboardViewModel.swift */; };
+		1CB34D3F262F29620011E4F7 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34D3D262F29620011E4F7 /* DashboardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +80,12 @@
 		1CB34CDB262F19530011E4F7 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		1CB34CEF262F1A140011E4F7 /* ImageCaching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCaching.swift; sourceTree = "<group>"; };
 		1CB34CFC262F1A450011E4F7 /* NetworkEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEndpoints.swift; sourceTree = "<group>"; };
+		1CB34D08262F1BBE0011E4F7 /* EmployeeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmployeeData.json; sourceTree = "<group>"; };
+		1CB34D0F262F1C000011E4F7 /* EmployeeMalformed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmployeeMalformed.json; sourceTree = "<group>"; };
+		1CB34D18262F1C2A0011E4F7 /* EmployeeEmpty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmployeeEmpty.json; sourceTree = "<group>"; };
+		1CB34D24262F1DB90011E4F7 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		1CB34D2D262F1E920011E4F7 /* SquareTakeHomeNewtorkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareTakeHomeNewtorkTest.swift; sourceTree = "<group>"; };
+		1CB34D3D262F29620011E4F7 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +146,7 @@
 				1CB34C88262F17230011E4F7 /* Assets.xcassets */,
 				1CB34C8A262F17230011E4F7 /* LaunchScreen.storyboard */,
 				1CB34C8D262F17230011E4F7 /* Info.plist */,
+				1CB34D0E262F1BD00011E4F7 /* MockData */,
 			);
 			path = SquareTakeHome;
 			sourceTree = "<group>";
@@ -135,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				1CB34C96262F17230011E4F7 /* SquareTakeHomeTests.swift */,
+				1CB34D2D262F1E920011E4F7 /* SquareTakeHomeNewtorkTest.swift */,
 				1CB34C98262F17230011E4F7 /* Info.plist */,
 			);
 			path = SquareTakeHomeTests;
@@ -152,10 +173,11 @@
 		1CB34CB7262F187F0011E4F7 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				1CB34CFC262F1A450011E4F7 /* NetworkEndpoints.swift */,
+				1CB34D24262F1DB90011E4F7 /* NetworkError.swift */,
 				1CB34CB2262F18780011E4F7 /* DataFetchable.swift */,
 				1CB34CBB262F18B10011E4F7 /* ProdNetwork.swift */,
 				1CB34CC0262F18B80011E4F7 /* MockNetwork.swift */,
-				1CB34CFC262F1A450011E4F7 /* NetworkEndpoints.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -173,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				1CB34C83262F17230011E4F7 /* DashboardViewController.swift */,
+				1CB34D3D262F29620011E4F7 /* DashboardViewModel.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -183,6 +206,16 @@
 				1CB34CEF262F1A140011E4F7 /* ImageCaching.swift */,
 			);
 			path = ImageCaching;
+			sourceTree = "<group>";
+		};
+		1CB34D0E262F1BD00011E4F7 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				1CB34D08262F1BBE0011E4F7 /* EmployeeData.json */,
+				1CB34D0F262F1C000011E4F7 /* EmployeeMalformed.json */,
+				1CB34D18262F1C2A0011E4F7 /* EmployeeEmpty.json */,
+			);
+			path = MockData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,8 +321,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB34D09262F1BBE0011E4F7 /* EmployeeData.json in Resources */,
+				1CB34D10262F1C000011E4F7 /* EmployeeMalformed.json in Resources */,
 				1CB34C8C262F17230011E4F7 /* LaunchScreen.storyboard in Resources */,
 				1CB34C89262F17230011E4F7 /* Assets.xcassets in Resources */,
+				1CB34D19262F1C2A0011E4F7 /* EmployeeEmpty.json in Resources */,
 				1CB34C87262F17230011E4F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +334,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB34D11262F1C000011E4F7 /* EmployeeMalformed.json in Resources */,
+				1CB34D1A262F1C2A0011E4F7 /* EmployeeEmpty.json in Resources */,
+				1CB34D0A262F1BBE0011E4F7 /* EmployeeData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,12 +357,14 @@
 				1CB34CC1262F18B80011E4F7 /* MockNetwork.swift in Sources */,
 				1CB34CDC262F19530011E4F7 /* Employee.swift in Sources */,
 				1CB34CF0262F1A140011E4F7 /* ImageCaching.swift in Sources */,
+				1CB34D3E262F29620011E4F7 /* DashboardViewModel.swift in Sources */,
 				1CB34C84262F17230011E4F7 /* DashboardViewController.swift in Sources */,
 				1CB34C80262F17230011E4F7 /* AppDelegate.swift in Sources */,
 				1CB34CB3262F18780011E4F7 /* DataFetchable.swift in Sources */,
 				1CB34CBC262F18B10011E4F7 /* ProdNetwork.swift in Sources */,
 				1CB34CFD262F1A450011E4F7 /* NetworkEndpoints.swift in Sources */,
 				1CB34CD6262F19490011E4F7 /* EmployeeReturn.swift in Sources */,
+				1CB34D25262F1DB90011E4F7 /* NetworkError.swift in Sources */,
 				1CB34C82262F17230011E4F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,9 +373,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB34D35262F1EB60011E4F7 /* MockNetwork.swift in Sources */,
+				1CB34D3F262F29620011E4F7 /* DashboardViewModel.swift in Sources */,
 				1CB34C97262F17230011E4F7 /* SquareTakeHomeTests.swift in Sources */,
+				1CB34D2E262F1E920011E4F7 /* SquareTakeHomeNewtorkTest.swift in Sources */,
 				1CB34CF1262F1A140011E4F7 /* ImageCaching.swift in Sources */,
 				1CB34CFE262F1A450011E4F7 /* NetworkEndpoints.swift in Sources */,
+				1CB34D26262F1DB90011E4F7 /* NetworkError.swift in Sources */,
+				1CB34D39262F1EEE0011E4F7 /* DataFetchable.swift in Sources */,
 				1CB34CDD262F19530011E4F7 /* Employee.swift in Sources */,
 				1CB34CD7262F19490011E4F7 /* EmployeeReturn.swift in Sources */,
 			);

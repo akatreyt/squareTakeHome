@@ -7,6 +7,8 @@
 
 import Foundation
 
-class ProdNetwork: DataFetchable {
-    
+public final class ProdNetwork: DataFetchable {
+    public func retrieveEmployees(fromEndpoint endpoint: URL, completion: @escaping (Result<EmployeeReturn, NetworkError>) -> Void) {
+        
+    }
 }

@@ -8,5 +8,34 @@
 import Foundation
 
 protocol DataFetchable {
-    
+    func retrieveEmployees(fromEndpoint endpoint: URL, completion: @escaping (Result<EmployeeReturn, NetworkError>) -> Void)
+}
+
+extension DataFetchable{
+    func parse(_ data: Data, withResponse resp: URLResponse, usingComp comp: @escaping (Result<EmployeeReturn, NetworkError>) -> Void) {
+        if let httpResponse = resp as? HTTPURLResponse {
+            if httpResponse.statusCode != 200 {
+                DispatchQueue.main.async {
+                    comp(.failure(.InvalidHTTPCode(resp.url!, httpResponse.statusCode)))
+                }
+                return
+            }
+        }else{
+            DispatchQueue.main.async {
+                comp(.failure(.InvalidResponse(resp.url!)))
+            }
+            return
+        }
+        
+        do{
+            let apiReturn  = try JSONDecoder().decode(EmployeeReturn.self, from: data)
+            DispatchQueue.main.async {
+                comp(.success(apiReturn))
+            }
+        }catch{
+            DispatchQueue.main.async {
+                comp(.failure(.ErrorDecoding(error)))
+            }
+        }
+    }
 }
