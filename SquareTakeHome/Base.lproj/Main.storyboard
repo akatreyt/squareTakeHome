@@ -25,9 +25,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Cd5-Vm-P8r">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Cd5-Vm-P8r">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ2-ZY-afg">
                                 <rect key="frame" x="0.0" y="426" width="414" height="44"/>
@@ -52,6 +51,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="PU2-AP-pUa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5hc-d1-wPA"/>
+                            <constraint firstItem="Cd5-Vm-P8r" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BfY-jB-XLG"/>
                             <constraint firstItem="PU2-AP-pUa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Fbx-if-hGs"/>
                             <constraint firstItem="5mu-Kd-d7C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Uoc-Fg-OUD"/>
                             <constraint firstItem="SZ2-ZY-afg" firstAttribute="top" secondItem="5mu-Kd-d7C" secondAttribute="bottom" constant="23" id="WPu-PZ-glL"/>
@@ -61,6 +61,7 @@
                             <constraint firstItem="5mu-Kd-d7C" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fS0-Fe-5Lj"/>
                             <constraint firstItem="SZ2-ZY-afg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hEa-OK-dPJ"/>
                             <constraint firstItem="SZ2-ZY-afg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="k2E-ex-4fh"/>
+                            <constraint firstItem="Cd5-Vm-P8r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kFc-UF-R8X"/>
                             <constraint firstItem="SZ2-ZY-afg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oBd-Gm-u2o"/>
                         </constraints>
                     </view>

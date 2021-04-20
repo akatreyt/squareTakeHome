@@ -19,10 +19,11 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "EmployeeCellTableViewCell", bundle: nil), forCellReuseIdentifier: "EmployeeCell")
-
-        viewModel = DashboardViewModel(dataFetchType: MockNetwork(), viewUpdater: { [self] in
-            updateView()
-        })
+        
+        viewModel = DashboardViewModel(dataFetchType: ProdNetwork(),
+                                       viewUpdater: { [self] in
+                                        updateView()
+                                       })
         
         // call to set the view initally
         updateView()
