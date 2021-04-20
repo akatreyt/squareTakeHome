@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import UIKit
 
 public final class DashboardViewModel{
     private var dataFetcher: DataFetchable!
     private var viewUpdater: (() -> Void)!
+    
+    public let imageCache = ImageCache()
     
     private(set) public var employeeReturn: EmployeeReturn?
     
@@ -53,6 +56,14 @@ public final class DashboardViewModel{
             case .failure(let error):
                 self.currentViewType = .error(error.errorDescription ?? DashboardViewConstants.uknownError.rawValue)
             }
+        }
+    }
+    
+    public func getImage(forEmployee employee: Employee, completion: @escaping (Result<UIImage, NetworkError>) -> Void){
+        if let url = URL(string: employee.photoURLLarge) {
+            imageCache.getImage(forURL: url, completion: completion)
+        }else{
+            completion(.failure(.InvalidURL(employee.photoURLLarge)))
         }
     }
 }

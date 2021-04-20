@@ -22,8 +22,8 @@
 		1CB34CD7262F19490011E4F7 /* EmployeeReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34CD5262F19490011E4F7 /* EmployeeReturn.swift */; };
 		1CB34CDC262F19530011E4F7 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34CDB262F19530011E4F7 /* Employee.swift */; };
 		1CB34CDD262F19530011E4F7 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34CDB262F19530011E4F7 /* Employee.swift */; };
-		1CB34CF0262F1A140011E4F7 /* ImageCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34CEF262F1A140011E4F7 /* ImageCaching.swift */; };
-		1CB34CF1262F1A140011E4F7 /* ImageCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34CEF262F1A140011E4F7 /* ImageCaching.swift */; };
+		1CB34CF0262F1A140011E4F7 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34CEF262F1A140011E4F7 /* ImageCache.swift */; };
+		1CB34CF1262F1A140011E4F7 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34CEF262F1A140011E4F7 /* ImageCache.swift */; };
 		1CB34CFD262F1A450011E4F7 /* NetworkEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34CFC262F1A450011E4F7 /* NetworkEndpoints.swift */; };
 		1CB34CFE262F1A450011E4F7 /* NetworkEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34CFC262F1A450011E4F7 /* NetworkEndpoints.swift */; };
 		1CB34D09262F1BBE0011E4F7 /* EmployeeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CB34D08262F1BBE0011E4F7 /* EmployeeData.json */; };
@@ -40,6 +40,10 @@
 		1CB34D3E262F29620011E4F7 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34D3D262F29620011E4F7 /* DashboardViewModel.swift */; };
 		1CB34D3F262F29620011E4F7 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34D3D262F29620011E4F7 /* DashboardViewModel.swift */; };
 		1CB34D50262F34690011E4F7 /* SquareTakeHomeDashboardViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34D4F262F34690011E4F7 /* SquareTakeHomeDashboardViewModelTest.swift */; };
+		1CB34D59262F4BD90011E4F7 /* EmployeeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34D57262F4BD90011E4F7 /* EmployeeCellTableViewCell.swift */; };
+		1CB34D5A262F4BD90011E4F7 /* EmployeeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB34D57262F4BD90011E4F7 /* EmployeeCellTableViewCell.swift */; };
+		1CB34D5B262F4BD90011E4F7 /* EmployeeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CB34D58262F4BD90011E4F7 /* EmployeeCellTableViewCell.xib */; };
+		1CB34D5C262F4BD90011E4F7 /* EmployeeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CB34D58262F4BD90011E4F7 /* EmployeeCellTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +83,7 @@
 		1CB34CC0262F18B80011E4F7 /* MockNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetwork.swift; sourceTree = "<group>"; };
 		1CB34CD5262F19490011E4F7 /* EmployeeReturn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeReturn.swift; sourceTree = "<group>"; };
 		1CB34CDB262F19530011E4F7 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
-		1CB34CEF262F1A140011E4F7 /* ImageCaching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCaching.swift; sourceTree = "<group>"; };
+		1CB34CEF262F1A140011E4F7 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		1CB34CFC262F1A450011E4F7 /* NetworkEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEndpoints.swift; sourceTree = "<group>"; };
 		1CB34D08262F1BBE0011E4F7 /* EmployeeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmployeeData.json; sourceTree = "<group>"; };
 		1CB34D0F262F1C000011E4F7 /* EmployeeMalformed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmployeeMalformed.json; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 		1CB34D2D262F1E920011E4F7 /* SquareTakeHomeNewtorkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareTakeHomeNewtorkTest.swift; sourceTree = "<group>"; };
 		1CB34D3D262F29620011E4F7 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		1CB34D4F262F34690011E4F7 /* SquareTakeHomeDashboardViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareTakeHomeDashboardViewModelTest.swift; sourceTree = "<group>"; };
+		1CB34D57262F4BD90011E4F7 /* EmployeeCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCellTableViewCell.swift; sourceTree = "<group>"; };
+		1CB34D58262F4BD90011E4F7 /* EmployeeCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeCellTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +205,8 @@
 			children = (
 				1CB34C83262F17230011E4F7 /* DashboardViewController.swift */,
 				1CB34D3D262F29620011E4F7 /* DashboardViewModel.swift */,
+				1CB34D57262F4BD90011E4F7 /* EmployeeCellTableViewCell.swift */,
+				1CB34D58262F4BD90011E4F7 /* EmployeeCellTableViewCell.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -206,7 +214,7 @@
 		1CB34CF5262F1A1C0011E4F7 /* ImageCaching */ = {
 			isa = PBXGroup;
 			children = (
-				1CB34CEF262F1A140011E4F7 /* ImageCaching.swift */,
+				1CB34CEF262F1A140011E4F7 /* ImageCache.swift */,
 			);
 			path = ImageCaching;
 			sourceTree = "<group>";
@@ -330,6 +338,7 @@
 				1CB34C89262F17230011E4F7 /* Assets.xcassets in Resources */,
 				1CB34D19262F1C2A0011E4F7 /* EmployeeEmpty.json in Resources */,
 				1CB34C87262F17230011E4F7 /* Main.storyboard in Resources */,
+				1CB34D5B262F4BD90011E4F7 /* EmployeeCellTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CB34D11262F1C000011E4F7 /* EmployeeMalformed.json in Resources */,
+				1CB34D5C262F4BD90011E4F7 /* EmployeeCellTableViewCell.xib in Resources */,
 				1CB34D1A262F1C2A0011E4F7 /* EmployeeEmpty.json in Resources */,
 				1CB34D0A262F1BBE0011E4F7 /* EmployeeData.json in Resources */,
 			);
@@ -359,7 +369,7 @@
 			files = (
 				1CB34CC1262F18B80011E4F7 /* MockNetwork.swift in Sources */,
 				1CB34CDC262F19530011E4F7 /* Employee.swift in Sources */,
-				1CB34CF0262F1A140011E4F7 /* ImageCaching.swift in Sources */,
+				1CB34CF0262F1A140011E4F7 /* ImageCache.swift in Sources */,
 				1CB34D3E262F29620011E4F7 /* DashboardViewModel.swift in Sources */,
 				1CB34C84262F17230011E4F7 /* DashboardViewController.swift in Sources */,
 				1CB34C80262F17230011E4F7 /* AppDelegate.swift in Sources */,
@@ -368,6 +378,7 @@
 				1CB34CFD262F1A450011E4F7 /* NetworkEndpoints.swift in Sources */,
 				1CB34CD6262F19490011E4F7 /* EmployeeReturn.swift in Sources */,
 				1CB34D25262F1DB90011E4F7 /* NetworkError.swift in Sources */,
+				1CB34D59262F4BD90011E4F7 /* EmployeeCellTableViewCell.swift in Sources */,
 				1CB34C82262F17230011E4F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,7 +391,8 @@
 				1CB34D3F262F29620011E4F7 /* DashboardViewModel.swift in Sources */,
 				1CB34C97262F17230011E4F7 /* SquareTakeHomeTests.swift in Sources */,
 				1CB34D2E262F1E920011E4F7 /* SquareTakeHomeNewtorkTest.swift in Sources */,
-				1CB34CF1262F1A140011E4F7 /* ImageCaching.swift in Sources */,
+				1CB34CF1262F1A140011E4F7 /* ImageCache.swift in Sources */,
+				1CB34D5A262F4BD90011E4F7 /* EmployeeCellTableViewCell.swift in Sources */,
 				1CB34D50262F34690011E4F7 /* SquareTakeHomeDashboardViewModelTest.swift in Sources */,
 				1CB34CFE262F1A450011E4F7 /* NetworkEndpoints.swift in Sources */,
 				1CB34D26262F1DB90011E4F7 /* NetworkError.swift in Sources */,

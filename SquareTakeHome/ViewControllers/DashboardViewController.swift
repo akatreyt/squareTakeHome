@@ -18,7 +18,8 @@ class DashboardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.register(UINib(nibName: "EmployeeCellTableViewCell", bundle: nil), forCellReuseIdentifier: "EmployeeCell")
+
         viewModel = DashboardViewModel(dataFetchType: MockNetwork(), viewUpdater: { [self] in
             updateView()
         })
@@ -64,9 +65,10 @@ extension DashboardViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "EmployeeCell"){
-            let employee = viewModel.employeeReturn?.employees[indexPath.row]
-            cell.textLabel?.text = employee?.fullName
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "EmployeeCell") as? EmployeeCellTableViewCell{
+            if let employee = viewModel.employeeReturn?.employees[indexPath.row]{
+                cell.set(employee: employee, imageCache: viewModel.imageCache)
+            }
             return cell
         }else{
             fatalError()
